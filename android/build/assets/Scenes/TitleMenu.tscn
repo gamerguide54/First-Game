@@ -1,0 +1,230 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://assets/Audio/ButtonPress.ogg" type="AudioStream" id=1]
+[ext_resource path="res://script/TitleMenu.gd" type="Script" id=2]
+[ext_resource path="res://assets/Objects/platformChar_happy.png" type="Texture" id=3]
+[ext_resource path="res://assets/Objects/TombStone (2).png" type="Texture" id=4]
+[ext_resource path="res://assets/Objects/ladder_top.png" type="Texture" id=5]
+[ext_resource path="res://assets/BG/BG2.png" type="Texture" id=6]
+[ext_resource path="res://assets/Objects/moonFull.png" type="Texture" id=7]
+[ext_resource path="res://assets/Audio/SwingingPants.ogg" type="AudioStream" id=8]
+[ext_resource path="res://assets/Objects/SnowMan.png" type="Texture" id=9]
+[ext_resource path="res://assets/Objects/ladder_mid.png" type="Texture" id=10]
+[ext_resource path="res://assets/Objects/Tree_3.png" type="Texture" id=11]
+[ext_resource path="res://assets/Themes/title theme.tres" type="Theme" id=12]
+[ext_resource path="res://assets/Themes/button theme.tres" type="Theme" id=13]
+[ext_resource path="res://assets/Tiles/platformPack_tile004.png" type="Texture" id=14]
+[ext_resource path="res://assets/Tiles/platformPack_tile001.png" type="Texture" id=15]
+
+[sub_resource type="TileSet" id=1]
+0/name = "platformPack_tile001.png 0"
+0/texture = ExtResource( 15 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "platformPack_tile004.png 1"
+1/texture = ExtResource( 14 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+
+[node name="TitleMenu" type="Control"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="TextureRect" parent="."]
+margin_left = -1.0
+margin_top = 1.0
+margin_right = 1023.0
+margin_bottom = 601.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 589824, 1, 0, 589825, 1, 0, 589826, 1, 0, 589827, 1, 0, 589828, 1, 0, 589829, 1, 0, 589830, 1, 0, 589831, 1, 0, 589832, 1, 0, 589833, 1, 0, 589834, 1, 0, 589835, 1, 0, 589836, 1, 0, 589837, 1, 0, 589838, 1, 0, 589839, 1, 0 )
+
+[node name="title" type="Label" parent="."]
+margin_left = 556.0
+margin_top = 17.0
+margin_right = 1009.0
+margin_bottom = 158.0
+theme = ExtResource( 12 )
+text = "platformer"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="play" type="Button" parent="."]
+margin_left = 601.0
+margin_top = 189.0
+margin_right = 976.0
+margin_bottom = 317.0
+theme = ExtResource( 13 )
+text = "PLAY"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="settngs" type="Button" parent="."]
+visible = false
+margin_left = 340.0
+margin_top = 328.0
+margin_right = 711.0
+margin_bottom = 456.0
+theme = ExtResource( 13 )
+text = "SETTINGS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quit" type="Button" parent="."]
+margin_left = 601.0
+margin_top = 351.0
+margin_right = 970.0
+margin_bottom = 479.0
+theme = ExtResource( 13 )
+text = "QUIT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="itens" type="Node2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="itens"]
+margin_left = 145.0
+margin_top = 237.0
+margin_right = 427.0
+margin_bottom = 512.0
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="itens"]
+margin_left = 513.0
+margin_top = 436.0
+margin_right = 566.0
+margin_bottom = 512.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="itens"]
+margin_left = 22.0
+margin_top = 366.0
+margin_right = 215.0
+margin_bottom = 576.0
+rect_scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect6" type="TextureRect" parent="itens"]
+margin_left = 388.0
+margin_top = 416.0
+margin_right = 484.0
+margin_bottom = 512.0
+texture = ExtResource( 3 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="l1" type="TextureRect" parent="itens"]
+margin_left = 66.0
+margin_right = 130.0
+margin_bottom = 64.0
+rect_scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 10 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="l2" type="TextureRect" parent="itens"]
+margin_left = 66.0
+margin_top = 57.0
+margin_right = 130.0
+margin_bottom = 121.0
+rect_scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 10 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="l3" type="TextureRect" parent="itens"]
+margin_left = 66.0
+margin_top = 110.0
+margin_right = 130.0
+margin_bottom = 174.0
+rect_scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 10 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="l4" type="TextureRect" parent="itens"]
+margin_left = 66.0
+margin_top = 165.0
+margin_right = 130.0
+margin_bottom = 229.0
+rect_scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 5 )
+flip_h = true
+flip_v = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect9" type="TextureRect" parent="itens"]
+margin_left = 433.0
+margin_top = 30.0001
+margin_right = 517.0
+margin_bottom = 114.0
+rect_rotation = 43.2173
+rect_scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 7 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Song" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -5.909
+autoplay = true
+
+[node name="PressSong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+
+[connection signal="pressed" from="play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

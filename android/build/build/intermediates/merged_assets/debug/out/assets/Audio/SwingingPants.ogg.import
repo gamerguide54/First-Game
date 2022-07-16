@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SwingingPants.ogg-834595d297b08242836e4716edd71d01.oggstr"
+
+[deps]
+
+source_file="res://assets/Audio/SwingingPants.ogg"
+dest_files=[ "res://.import/SwingingPants.ogg-834595d297b08242836e4716edd71d01.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

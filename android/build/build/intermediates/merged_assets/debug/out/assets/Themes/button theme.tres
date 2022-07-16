@@ -1,0 +1,36 @@
+[gd_resource type="Theme" load_steps=6 format=2]
+
+[ext_resource path="res://assets/Fonts/UI font.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/Themes/Theme settings.tres" type="StyleBox" id=2]
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+content_margin_top = 9.0
+content_margin_bottom = 9.0
+bg_color = Color( 0.0823529, 0.780392, 0.894118, 1 )
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_size = 2
+
+[sub_resource type="StyleBoxFlat" id=3]
+content_margin_top = 9.0
+content_margin_bottom = 9.0
+bg_color = Color( 0.0901961, 0.498039, 0.568627, 1 )
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_size = 2
+
+[resource]
+Button/colors/font_color = Color( 0.960784, 0.941176, 1, 1 )
+Button/fonts/font = SubResource( 2 )
+Button/styles/hover = ExtResource( 2 )
+Button/styles/normal = SubResource( 4 )
+Button/styles/pressed = SubResource( 3 )
